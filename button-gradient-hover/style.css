@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(39, 39, 39)
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, darkblue,darkred)
+}
+.btn-gradient{
+    border: 0;
+    padding: 20px 50px;
+    background-image: linear-gradient(to right,blue,skyblue,blue);
+    background-size: 200% auto;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.blue{
+    background-image: linear-gradient(to right,blue,skyblue,blue);
+}
+.red{
+    background-image: linear-gradient(to right,red,#ffa1a1,red);
+}
+
+.btn-gradient:hover{
+    background-position: right center;
+}
