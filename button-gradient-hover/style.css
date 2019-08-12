@@ -1,35 +1,29 @@
 body{
-    background-color: rgb(39, 39, 39)
+    margin: 0;
+    background-color: #ddd;
 }
 .container{
+    height:100vh;
+    width:100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: linear-gradient(to right, darkblue,darkred)
 }
 .btn-gradient{
-    border: 0;
-    padding: 20px 50px;
-    background-image: linear-gradient(to right,blue,skyblue,blue);
+    border:0;
+    box-shadow:0 5px 10px #00000044;
+    padding: 20px 40px;
+    border-radius:5px;
+    background-image:
+    linear-gradient(to right,blue,skyblue,blue);
     background-size: 200% auto;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
     cursor: pointer;
-    transition: 200ms;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px black;
-}
-
-.blue{
-    background-image: linear-gradient(to right,blue,skyblue,blue);
-}
-.red{
-    background-image: linear-gradient(to right,red,#ffa1a1,red);
+    color:white;
+    text-transform:uppercase;
+    transition:200ms;
 }
 
 .btn-gradient:hover{
     background-position: right center;
+    box-shadow:0 15px 10px #00000044;
 }

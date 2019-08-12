@@ -1,0 +1,43 @@
+
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+}
+
+.loading{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4DD0E1;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.loading::after{
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  border-top: 5px solid #4DD0E1;
+  animation: loading 250ms linear infinite;
+}
+
+@keyframes loading {
+      0%{
+        transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+      }
+}
