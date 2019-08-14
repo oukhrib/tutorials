@@ -1,0 +1,44 @@
+/* CSS */
+body{
+  font-size: 2em;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.check{
+  position: relative;
+}
+.check::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  background-color: #ddd;
+  display: inline-block;
+  top: -8px;
+  left: -30px;
+  border-radius: 25px;
+  box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+.check::after{
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: #eee;
+  position: absolute;
+  top: -8px;
+  border-radius: 25px;
+  left: -30px;
+  transition: 200ms;
+}
+
+.check:checked::after{
+  left: -5px;
+}
+.check:checked::before{
+  background-color: #8BC34A;
+}
