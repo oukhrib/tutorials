@@ -1,0 +1,41 @@
+*:focus{
+  outline: none;
+}
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(45deg,#026,#602);
+}
+
+.search{
+  display: inline-block;
+  position: relative;
+}
+
+.search input{
+  height: 40px;
+  padding: 0 40px 0 0px;
+  border-radius: 20px;
+  border: 0;
+  width: 0;
+  transition: 500ms;
+}
+.search button{
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+}
+.search:hover>input, input:focus{
+  width: 250px;
+  padding-left: 20px;
+  outline: none;
+}
